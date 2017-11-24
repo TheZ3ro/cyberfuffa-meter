@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "CyberFuffa Meter",
+  "author": "TheZero (@thez3ro)",
+  "version": "0.0.1",
+
+  "description": "Measure cyberfuffa for each website you visit",
+
+  "icons": {
+    "48": "icons/cyber.png"
+  },
+
+  "browser_action": {
+    "browser_style": true,
+    "default_icon": {
+      "16": "icons/empty.svg"
+    }
+  },
+
+  "background": {
+    "scripts": [
+      "cyber.js"
+    ]
+  }
+}
