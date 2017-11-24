@@ -1,2 +1,2 @@
 all:
-  zip -r -FS ../cyberfuffa-meter.xpi *
+	zip -r ./cyberfuffa-meter.xpi *
