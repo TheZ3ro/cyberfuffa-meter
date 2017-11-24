@@ -7,7 +7,15 @@ function updateTabCounter(tab, changeInfo, tabInfo) {
 }
 
 function setCounter(tabId, counter) {
-	browser.browserAction.setBadgeText({text: counter.toString(), tabId: tabId});
+        var color = "green"; 
+        if (counter >= 1 && counter <= 3) {
+            color = "orange";
+        } else if (counter >= 5) {
+            color = "red";
+        }
+        browser.browserAction.setBadgeBackgroundColor({color: color, tabId: tabId});
+        browser.browserAction.setBadgeText({text: counter.toString(), tabId: tabId});
+        
 }
 
 function handleMessage(request, sender, sendResponse) {
